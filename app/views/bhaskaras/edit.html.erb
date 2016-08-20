@@ -1,0 +1,11 @@
+<table border="0" style="width: 800px">
+  <tbody>
+    <tr>
+      <td><h1>Informe os coeficientes...</h1></td>
+      <td><h6>"É possível informar coeficientes complexos na forma <b>a+bi</b>."</h6></td>
+  </tbody>
+</table>
+
+<%= render 'form', bhaskara: @bhaskara %>
+<hr>
+<%= render :partial => 'shared/resultado', bhaskara: @bhaskara %>

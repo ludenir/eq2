@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Equacao 2o Grau</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <table border="0" >
+    	<tr>
+    		<td>
+                <%= image_tag 'math.png' %>
+        	</td>
+    		<td>
+                <h3><strong><a href="https://www.youtube.com/watch?v=8ogBhY5YYHw">Como resolver uma 'Equação do 2o Grau'</a></strong></h3>
+        	</td>
+    		<td>
+                <%= image_tag 'LogoMaths2.jpg' %>
+        	</td>
+    	</tr>
+    </table>
+    <hr>
+  </head>
+
+    <%# render :partial => 'shared/menu' %>
+    
+    <%= yield %>
+
+  </body>
+</html>

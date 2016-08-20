@@ -1,0 +1,36 @@
+<%= form_for(bhaskara) do |f| %>
+  <% if bhaskara.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bhaskara.errors.count, "error") %> prohibited this bhaskara from being saved:</h2>
+
+      <ul>
+      <% bhaskara.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<table border="0" style="width: 500px">
+  <tbody>
+    <tr>
+      <td><%= f.label 'Coeficiente A:' %></td>
+      <td><%= f.text_field :a %></td>
+    </tr>
+    <tr>
+      <td><%= f.label 'Coeficiente B:' %></td>
+      <td><%= f.text_field :b %></td>
+    </tr>
+    <tr>
+      <td><%= f.label 'Coeficiente C:' %></td>
+      <td><%= f.text_field :c %></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><%= f.submit 'Calcular' %></td>
+    </tr>
+  </tbody>
+</table>
+
+    
+<% end %>
